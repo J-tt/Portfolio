@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="68.023956mm"
+   height="88.383263mm"
+   viewBox="0 0 68.023956 88.383263"
+   version="1.1"
+   id="svg8"
+   inkscape:export-filename="/home/jett/Programming/work/portfolio/logo.png"
+   inkscape:export-xdpi="37.34"
+   inkscape:export-ydpi="37.34"
+   inkscape:version="0.92.2 2405546, 2018-03-11"
+   sodipodi:docname="logo.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="287.76608"
+     inkscape:cy="229.90884"
+     inkscape:document-units="mm"
+     inkscape:current-layer="flowRoot4522"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1888"
+     inkscape:window-height="1028"
+     inkscape:window-x="16"
+     inkscape:window-y="36"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(228.00732,-125.92523)">
+    <g
+       aria-label="JJ"
+       transform="scale(0.26458333)"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       id="flowRoot4522">
+      <path
+         d="m -647.43576,475.9379 h 42.77423 v 229.26125 q -0.45308,22.85826 -8.82633,42.09531 -8.14755,19.23714 -22.40567,33.26896 -14.25811,13.80538 -33.72146,21.72663 -19.23717,7.69482 -42.09543,7.69482 -23.08447,0 -42.09531,-7.0159 -18.78446,-7.01592 -32.81625,-19.91608 -13.80552,-13.12649 -22.17926,-31.4583 -8.37384,-18.55824 -10.41069,-41.41642 h 42.54794 q 0.679,13.80541 5.43164,25.57406 4.97905,11.76853 13.3529,20.59497 8.37373,8.60018 19.91608,13.3529 11.76854,4.75264 26.25295,4.75264 14.93715,0 26.70566,-5.43167 11.76867,-5.65794 19.91608,-15.16333 8.37385,-9.50537 12.67387,-21.95293 4.52645,-12.67387 4.97905,-26.70566 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;font-family:'Roboto Mono for Powerline';-inkscape-font-specification:'Roboto Mono for Powerline, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#48a3a3;fill-opacity:0.55309735;stroke-width:11.58753586"
+         id="path4530"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m -689.98378,475.9379 h 42.77435 v 229.26122 q -0.45308,22.85829 -8.82648,42.09531 -8.14741,19.23717 -22.40552,33.26899 -14.25812,13.80538 -33.72158,21.72663 -19.23716,7.69482 -42.09531,7.69482 -23.08459,0 -42.09532,-7.0159 -18.78457,-7.01592 -32.81636,-19.91608 -13.8054,-13.12649 -22.17925,-31.4583 -8.37374,-18.55824 -10.4107,-41.41642 h 42.54802 q 0.67904,13.80541 5.43168,25.57406 4.97905,11.76853 13.35278,20.59497 8.37385,8.60015 19.91606,13.3529 11.76865,4.75264 26.25309,4.75264 14.937,0 26.70565,-5.43167 11.76854,-5.65794 19.91609,-15.16334 8.37373,-9.50536 12.67386,-21.95293 4.52632,-12.67386 4.97894,-26.70568 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;font-family:'Roboto Mono for Powerline';-inkscape-font-specification:'Roboto Mono for Powerline, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#48a3a3;fill-opacity:1;stroke-width:11.58753586"
+         id="path4532"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+</svg>
