@@ -3,13 +3,27 @@
     <head>
         <meta charset="UTF-8"/>
         <title>Jett Jackson</title>
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/solid.css" integrity="sha384-uKQOWcYZKOuKmpYpvT0xCFAs/wE157X5Ua3H5onoRAOCNkJAMX/6QF0iXGGQV9cP" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/brands.css" integrity="sha384-BCEeiNUiLzxxoeYaIu7jJqq0aVVz2O2Ig4WbWEmRQ2Dx/AAxNV1wMDBXyyrxw1Zd" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/fontawesome.css" integrity="sha384-HU5rcgG/yUrsDGWsVACclYdzdCcn5yU8V/3V84zSrPDHwZEdjykadlgI6RHrxGrJ" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"></noscript>
+
+        <link rel="preload" href="https://use.fontawesome.com/releases/v5.4.2/css/solid.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/solid.css"></noscript>
+
+        <link rel="preload" href="https://use.fontawesome.com/releases/v5.4.2/css/brands.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/brands.css"></noscript>
+
+        <link rel="preload" href="https://use.fontawesome.com/releases/v5.4.2/css/fontawesome.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/fontawesome.css"></noscript>
+
+        <script>
+            /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+(function(w){"use strict";if(!w.loadCSS){w.loadCSS=function(){}}var rp=loadCSS.relpreload={};rp.support=(function(){var ret;try{ret=w.document.createElement("link").relList.supports("preload")}catch(e){ret=false}return function(){return ret}})();rp.bindMediaToggle=function(link){var finalMedia=link.media||"all";function enableStylesheet(){link.media=finalMedia}if(link.addEventListener){link.addEventListener("load",enableStylesheet)}else if(link.attachEvent){link.attachEvent("onload",enableStylesheet)}setTimeout(function(){link.rel="stylesheet";link.media="only x"});setTimeout(enableStylesheet,3000)};rp.poly=function(){if(rp.support()){return}var links=w.document.getElementsByTagName("link");for(var i=0;i<links.length;i+=1){var link=links[i];if(link.rel==="preload"&&link.getAttribute("as")==="style"&&!link.getAttribute("data-loadcss")){link.setAttribute("data-loadcss",true);rp.bindMediaToggle(link)}}};if(!rp.support()){rp.poly();var run=w.setInterval(rp.poly,500);if(w.addEventListener){w.addEventListener("load",function(){rp.poly();w.clearInterval(run)})}else if(w.attachEvent){w.attachEvent("onload",function(){rp.poly();w.clearInterval(run)})}}if(typeof exports!=="undefined"){exports.loadCSS=loadCSS}else{w.loadCSS=loadCSS}}(typeof global!=="undefined"?global:this));
+            </script>
     </head>
     <body>
-        <div class="introduction">
+        <div id="introduction" class="wrapper">
             <div class="container">
                 <h3>Hello,</h3>
                 <h1>I'm <b class="blue">Jett Jackson</b></h1>
@@ -20,20 +34,45 @@
             </div>
         </div>
     </body>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
     <script>
+     function loadScript(src, callback)
+     {
+         var s,
+             r,
+             t;
+         r = false;
+         s = document.createElement('script');
+         s.type = 'text/javascript';
+         s.src = src;
+         s.onload = s.onreadystatechange = function() {
+             //console.log( this.readyState ); //uncomment this line to see which ready states are called.
+             if ( !r && (!this.readyState || this.readyState == 'complete') )
+                 {
+                     r = true;
+                     callback();
+                 }
+         };
+         t = document.getElementsByTagName('script')[0];
+         t.parentNode.insertBefore(s, t);
+        }
+     loadScript("https://cdn.jsdelivr.net/npm/typed.js@2.0.9", init)
+     function init() {
         var options = {
             strings: ["code.", "passion.", "dedication.", "attention to detail.", "a personal touch.", "elegance."],
-            typeSpeed: 50,
+            typeSpeed: 40,
             startDelay: 100,
-            backDelay: 2000,
+            backDelay: 1500,
             loop: true,
             loopCount: Infinity
         }
 
         var typed = new Typed("#typed", options);
+     }
     </script>
     <style>
+     a > i {
+         display: none;
+     }
      body, html {
          overflow-x: hidden;
          overflow-y: hidden;
@@ -53,23 +92,28 @@
      .container {
          padding: 0 5% 0 5%;
      }
-     .introduction {
+     .wrapper {
          height: 100%;
          display: flex;
          flex-flow: column wrap;
          justify-content: center;
      }
-     p {
+     .columns {
+         display: flex;
+         flex-flow: row wrap;
+         justify-content: space-around;
+     }
+     #introduction > .container > p {
          font-size: 3.2em;
      }
-     .introduction > .container > h3, h1, p {
+     #introduction > .container > h3, h1, p {
          margin: 0;
      }
-     .introduction > .container > h3 {
+     #introduction > .container > h3 {
          font-size: 4em;
          color: #707070;
      }
-     .introduction > .container > h1 {
+     #introduction > .container > h1 {
          font-size: 8em;
          margin-left: -0.05em;
      }
@@ -84,11 +128,11 @@
          .container {
              padding: 0 3px 0 3px;
          }
-         .introduction > .container > h3 {
+         #introduction > .container > h3 {
              font-size: 2em;
              color: #707070;
          }
-         .introduction > .container > h1 {
+         #introduction > .container > h1 {
              font-size: 4em;
              margin-left: -0.025em;
          }
