@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Jett Jackson</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Description" content="Jett Jackson - Perth based devoper, specialising in websites and design">
+
+        <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#00aba9">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"></noscript>
+
+        <link rel="preload" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"></noscript>
+        <script>
+            /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+(function(w){"use strict";if(!w.loadCSS){w.loadCSS=function(){}}var rp=loadCSS.relpreload={};rp.support=(function(){var ret;try{ret=w.document.createElement("link").relList.supports("preload")}catch(e){ret=false}return function(){return ret}})();rp.bindMediaToggle=function(link){var finalMedia=link.media||"all";function enableStylesheet(){link.media=finalMedia}if(link.addEventListener){link.addEventListener("load",enableStylesheet)}else if(link.attachEvent){link.attachEvent("onload",enableStylesheet)}setTimeout(function(){link.rel="stylesheet";link.media="only x"});setTimeout(enableStylesheet,3000)};rp.poly=function(){if(rp.support()){return}var links=w.document.getElementsByTagName("link");for(var i=0;i<links.length;i+=1){var link=links[i];if(link.rel==="preload"&&link.getAttribute("as")==="style"&&!link.getAttribute("data-loadcss")){link.setAttribute("data-loadcss",true);rp.bindMediaToggle(link)}}};if(!rp.support()){rp.poly();var run=w.setInterval(rp.poly,500);if(w.addEventListener){w.addEventListener("load",function(){rp.poly();w.clearInterval(run)})}else if(w.attachEvent){w.attachEvent("onload",function(){rp.poly();w.clearInterval(run)})}}if(typeof exports!=="undefined"){exports.loadCSS=loadCSS}else{w.loadCSS=loadCSS}}(typeof global!=="undefined"?global:this));
+            </script>
+    </head>
+    <body>
+        <div id="introduction" class="wrapper">
+            <div class="container">
+                <h3>Hello,</h3>
+                <h1>I'm <b class="blue">Jett Jackson</b></h1>
+                <p>I build things with <b id="typed" class="blue"></b></p>
+                <p class="icons">
+                    <a href="https://www.linkedin.com/in/jettjackson/"><i title="linkedin" aria-hidden="true" class="fab fa-linkedin"></i><span class="sr-only">LinkedIn</span></a>
+                    <a href="https://github.com/j-tt/"><i title="github" aria-hidden="true" class="fab fa-github-square"></i><span class="sr-only">Github</span></a>
+                    <a href="https://twitter.com/TRJ_tt"><i title="twitter" aria-hidden="true" class="fab fa-twitter"></i><span class="sr-only">Twitter</span></a>
+                    <a href="mailto:jett@jettjacksonmedia.com"><i title="email" aria-hidden="true" class="fas fa-envelope"></i><span class="sr-only">Email</span></a>
+                </p>
+            </div>
+        </div>
+    </body>
+    <script>
+     function loadScript(src, callback)
+     {
+         var s,
+             r,
+             t;
+         r = false;
+         s = document.createElement('script');
+         s.type = 'text/javascript';
+         s.src = src;
+         s.onload = s.onreadystatechange = function() {
+             //console.log( this.readyState ); //uncomment this line to see which ready states are called.
+             if ( !r && (!this.readyState || this.readyState == 'complete') )
+                 {
+                     r = true;
+                     callback();
+                 }
+         };
+         t = document.getElementsByTagName('script')[0];
+         t.parentNode.insertBefore(s, t);
+        }
+     loadScript("https://cdn.jsdelivr.net/npm/typed.js@2.0.9", init)
+     function init() {
+        var options = {
+            strings: ["code.", "passion.", "dedication.", "attention to detail.", "a personal touch.", "elegance."],
+            typeSpeed: 40,
+            startDelay: 100,
+            backDelay: 1500,
+            loop: true,
+            loopCount: Infinity
+        }
+
+        var typed = new Typed("#typed", options);
+     }
+    </script>
+    <style>
+     a > i {
+         display: none;
+     }
+     body, html {
+         overflow-x: hidden;
+         overflow-y: hidden;
+         height: 100%;
+         font-family: 'Roboto', sans-serif;
+         color: #464646;
+     }
+     a:visited {
+         color: #A24747;
+     }
+     a {
+         color: #464646;
+    }
+     .blue {
+         color: #48A3A3;
+     }
+     .container {
+         padding: 0 5% 0 5%;
+     }
+     .wrapper {
+         height: 100%;
+         display: flex;
+         flex-flow: column wrap;
+         justify-content: center;
+     }
+     .columns {
+         display: flex;
+         flex-flow: row wrap;
+         justify-content: space-around;
+     }
+     #introduction > .container > p {
+         font-size: 3.2em;
+     }
+     #introduction > .container > h3, h1, p {
+         margin: 0;
+     }
+     #introduction > .container > h3 {
+         font-size: 4em;
+         color: #707070;
+     }
+     #introduction > .container > h1 {
+         font-size: 8em;
+         margin-left: -0.05em;
+     }
+     .icons {
+         margin-top: 0.2em;
+         font-size: 3em;
+     }
+     @media (max-width: 580px) {
+         html {
+             overflow-y: scroll;
+         }
+         .container {
+             padding: 0 3px 0 3px;
+         }
+         #introduction > .container > h3 {
+             font-size: 2em;
+             color: #707070;
+         }
+         #introduction > .container > h1 {
+             font-size: 4em;
+             margin-left: -0.025em;
+         }
+     }
+    </style>
+</html>
